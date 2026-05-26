@@ -9,3 +9,8 @@ def root():
         "framework": "fastapi",
         "platform": "inspyra"
     }
+
+@app.get("/health")
+def health():
+    return {"status": "healthy"}
+
